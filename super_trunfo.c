@@ -84,7 +84,7 @@ int main() {
     printf("\nComparação de Cartas:\n");
     printf("População: Carta %d venceu\n", populacao1 > populacao2);
     printf("Área: Carta %d venceu\n", area1 > area2);
-    printf("PIB: Carta %d)\n", pib1 > pib2);
+    printf("PIB: Carta %d venceu\n", pib1 > pib2);
     printf("Pontos Turísticos: Carta %d venceu\n", pontos_turisticos1 > pontos_turisticos2);
     printf("Densidade Populacional: Carta %d venceu\n", densidade1 > densidade2);
     printf("PIB per Capita: Carta %d venceu\n", pibCapita1 > pibCapita2);
