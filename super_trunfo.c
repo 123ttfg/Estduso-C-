@@ -38,7 +38,7 @@ int main() {
     printf("Nome da Cidade: ");
     scanf(" %s", &nome2);
     printf("População: ");
-    scanf("%d", &populacao2);
+    scanf("%lu", &populacao2);
     printf("Área em km²: ");
     scanf("%f", &area2);
     printf("PIB: ");
