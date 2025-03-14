@@ -1,0 +1,72 @@
+#include <stdio.h>
+
+// Função recursiva para mover a Torre (5 casas para a direita)
+void movertorre(int passos){
+    if (passos > 0){
+        printf("Direita\n");
+        movertorre(passos - 1);
+    }
+}
+// Função recursiva para mover o Bispo (5 casas para a esquerda)
+void moverbisporecursivo(int passos){
+    if (passos > 0){
+        printf("Esquerda\n");
+        moverbisporecursivo(passos - 1);
+    }
+}
+// Função com loop para movimentação diagonal superior direita do Bispo
+void bispoloop(int passos) {
+    for (int i = 1; i <= passos; i++) {
+        for (int j = 0; j < 1; j++) {  
+            printf("Superior Direita %d\n", i);
+        }
+    }
+}
+// Função recursiva para mover a Rainha (8 casas para cima e direita)
+void moverrainha(int passos){
+    if (passos > 0){
+        printf("Cima Direita\n");
+        moverrainha(passos - 1);
+    }
+}
+// Função para movimentação do Cavalo (2 casas para baixo e 1 para a esquerda)
+void movercavalo(int passos){  
+    int l = 1;  
+    while (l--)
+    {
+        for (int l = 1; l <= 2; l++)
+        {
+            printf("Baixo\n", l);
+        }
+        printf("Esquerda\n");
+    }
+}    
+
+int main(){
+
+    // Movimentação da Torre
+    printf("Movimento da Torre:\n");
+    movertorre(5);
+    printf("\n");
+
+    // Movimentação do Bispo com recursão
+    printf("Movimento do Bispo (Recursivo):\n");
+    moverbisporecursivo(5);
+    printf("\n");
+
+    // Movimentação do Bispo com loop
+    printf("Movimento do Bispo (Loop):\n");
+    bispoloop(5);
+    printf("\n");
+
+    // Movimentação da Rainha
+    printf("Movimento da Rainha:\n");
+    moverrainha(8);
+    printf("\n");
+
+    // Movimentação do Cavalo
+    printf("Movimento do Cavalo\n");
+    movercavalo(3);
+
+    return 0;
+}
